@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
   <title> Landing page </title>
-  <!-- <script src="https://gist.github.com/mapreuss/cccf0781ba848648d9d8a6510201a027.js"></script> -->
+
 </head>
-<body>
+<body class="wrapper">
   <header> 
+    <section>
+      <div class="header">
+        <h3>uma seleção de produtos</h3>
+        <h1>especial para você</h1>
+        <div class="col-12"> Todos os produtos desta lista foram selecionados a partir da sua navegação. Aproveite! </div>
+        <div class="col-12"> 
+          <button class="col-3">Conheça a Linx</button>
+          <button class="col-3">Ajude o algoritmo</button>
+          <button class="col-3">Seus produtos</button>
+          <button class="col-3">Compartilhe</button>
+        </div>
+      </div>
+    </section>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
       <polygon fill="gray" points="0,0 0,75 150,100 100,0" />
     </svg>
   </header>
-  <section>
-    <div class="header">
-      <h3>uma seleção de produtos</h3>
-      <h1>especial para você</h1>
-      <div class="col-12"> Todos os produtos desta lista foram selecionados a partir da sua navegação. Aproveite! </div>
-      <div class="col-12"> 
-        <button class="col-3">Conheça a Linx</button>
-        <button class="col-3">Ajude o algoritmo</button>
-        <button class="col-3">Seus produtos</button>
-        <button class="col-3">Compartilhe</button>
-      </div>
-    </div>
-  </section>
+
 
   <div class="conteudo">
     <div class="col-12"> <!-- texto e cadastro -->
@@ -43,11 +45,16 @@
       </div>
     </div>
 
-    <div class="col-12"> <!-- grid produtos -->
-      <h3>Sua seleção especial</h3>
-      <div class="col-12"> <!-- lista produtos FLEXBOX -->
-        <h2 style="color:red;">{{data[0].name}}</h2> <!-- CHAMADA INFO JSON -->
+    <div class="row">
+      <h3 class="column col-12">Sua seleção especial</h3>
+    </div>
+
+    <div class="row"> <!-- grid produtos -->
+      <div class="row">
+        <div class="column col-1"><h2 style="color:red;">{{data[0].name}}</h2></div>
+        <div class="column col-11"><h2 style="color:red;">{{data[1].name}}</h2></div>
       </div>
+
       <button> Ainda mais produtos aqui! </button>
     </div>
 
