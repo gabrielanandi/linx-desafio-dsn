@@ -1,41 +1,88 @@
-body {
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 	color: #888888;
-	font-style: "Helvetica Neue";
-	margin:0 !important;
+	font-family: "Helvetica Neue";
+}
+
+body {
+
 }
 
 
 .header {
-	color:#ffffff;
+	color:#000000;
 	text-align: center;
 	font-size: inherit;
-	z-index: 100;
 }
 
+/* fundo com ângulos */
 svg {
 	position: absolute;
 	top: 0;
 	width: 100%;
-	height: 10vw;
-	/* set height to pixels if you want angle to change with screen width */
+	height: 30vw;
+	margin:0;
 }
 
+/* botões */
 button {
-	padding: 4px;
+	padding: 3%;
 	border: solid 1px #707070;
 	background-color: #ffffff;
-	font: inherit;
-	color: inherit;
+	color: #888888;
 	width: 100%;
 	border-radius: 4px;
+	text-align: center;
 }
 
-.img-produto {
+/* produtos */
+.produto {
+	border: solid 1px #ccc;
+}
+
+.produto > .img-prod,
+.produto > .comprar,
+.produto > .nome,
+.produto > .descricao,
+.produto > .preco {
 	
+}
+
+.produto > .img-prod {
+	width: 200px;
+	height: 150px;
+}
+
+.produto > .comprar {
+	size: 30px;
+}
+.produto > .nome {
+	font-size: 14px;
+}
+.produto > .descricao {
+	font-size: 12px;
+}
+.produto > .preco  /*serve também para número de prestações*/ {
+	font-size: 14px;
+}
+.produto > .promocao {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+
+/* inputs */
+input {
+	width: 100%;
 }
 
 
 /** COLUNAS **/
+/* 
 .col {
 	margin: 3%;
 }
@@ -57,7 +104,81 @@ button {
 	width: 25%;
 	float: left;	
 }
+*/
 
+/*----------------------------------------------*/
+
+/* conteiner */
+.container  {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 20px;
+}
+@media (min-width: 1170px) {
+	.container {
+		max-width: 1170px;
+		padding: 0;
+	}
+}
+
+/* linha */
+.row {
+	margin-left: -5px;
+	margin-right: -5px;
+}
+.row:before,
+.row:after {
+	content: "";
+	display: table;
+}
+.row:after {
+	clear: both;
+}
+
+/* colunas */
+.col {
+	display: inline-block;
+	vertical-align: top;
+	min-height: 1px;
+	padding-left: 5px;
+	padding-right: 5px;
+	width: 100%;
+	margin-right: -4px;
+	*zoom: 1;
+	*display: inline;
+}
+
+/* uma coluna */
+@media (min-width: 420px) {
+	.col-1 {
+		width: 100%;
+		float: left;
+	}
+}
+
+
+/* duas colonas */
+@media (min-width: 768px) {
+	.col-2 {
+		width: 50%;
+		max-width: 100%;
+		float: left;
+	}
+}
+
+/* quatro colunas */
+@media (min-width: 768px) {
+	.col-4 {
+		width: 25%;
+		float: left;
+	}
+}
+
+
+/*----------------------------------------------*/
+
+/* FLEXBOX 
 .row {
 	display: flex;
 	flex-direction: row;
@@ -104,4 +225,4 @@ button {
 			flex: 12;
 		}
 	}
-}
+} */
