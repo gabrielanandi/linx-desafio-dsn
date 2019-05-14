@@ -16,10 +16,13 @@ O projeto pode ser iniciado a partir da janela de comandos do computador.
 
 <b>Não consegui fazer tudo!</b>
 - O e-mail marketing está lá, mas não consegui terminar seu template (precisaria de mais 3 horas aproximadamente). 
-- Priorizei criar o template para desktop e mobile pois teria mais dificuldade de fazer estes. Depois, utilizaria o mesmo template para o e-mail.
-- Neste tempo, aprendi a mexer com o GitBash e voltar a estudar Angular após as mudanças entre versões, o que acabou me consumindo um tempo. Para próximos trabalhos, serei mais ágil.
+- Priorizei criar o template para desktop e mobile pois teria mais dificuldade de fazer estes. Depois, utilizaria o mesmo template para o e-mail. Além disto, um e-mail bem formatado não vai necessariamente converter os cliques em vendas efetuadas. 
+Dando prioridade a criação do template da página com os produtos selecionados, é possível criar um e-mail estratégico mais simples (até ser criado o template padrão da página) e fazer com que o usuário clique e compre da página de seleção de promoções.
+- Neste tempo, me preocupei em aprender a mexer com o GitBash e voltar a estudar Angular após as mudanças entre versões, o que acabou me consumindo um tempo, mas nos próximos trabalhos me dará mais agilidade.
 
 
-
-
-<b>Espero que possamos conversar!</b>
+<b>
+  Att,
+  Gabriela Nandi.
+  
+  Espero que possamos conversar pessoalmente!</b>
