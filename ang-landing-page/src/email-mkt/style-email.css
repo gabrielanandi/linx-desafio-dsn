@@ -10,14 +10,14 @@
 /* Fontes utilizadas */
 @font-face {
 	font-family: "Helvetica Neue Medium";
-	src: url("src/assets/fonts/HelveticaNeueMedium.woff") format('woff');
+	src: url("../src/assets/fonts/HelveticaNeueMedium.woff") format('woff');
 }
 @font-face {
 	font-family: "Helvetica Neue Bold";
-	src: url("src/assets/fonts/HelveticaNeueBold.woff") format('woff');
+	src: url("../src/assets/fonts/HelveticaNeueBold.woff") format('woff');
 }
 
-/* CABEÇALHO -  */
+/* CABEÇALHO */
 .header {
 	color:#ffffff;
 	text-align: center;
@@ -257,76 +257,5 @@ input {
 		&.col-12{
 			flex: 12;
 		}
-	}
-}
-/* Ajuste do padding para dimensões menores */
-@media (max-width: 950px) {
-	.row {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		width: 100%;
-		padding: 2% 8%;
-	}
-}
-/* Ajuste para mobile */
-@media (max-width: 420px) {
-	.row {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		width: 100%;
-		padding: 3%;
-
-		.column {
-			display: flex;
-			flex-direction: column;
-			flex-basis: 100%;
-			flex: 1;
-
-			&.col-2 {
-				flex: 2;
-			}
-			&.col-3{
-				flex: 3;
-			}
-			&.col-4{
-				flex: 4;
-			}
-			&.col-5{
-				flex: 5;
-			}
-			&.col-6{
-				flex: 0 0 100%;
-			}
-			&.col-7{
-				flex: 7;
-			}
-			&.col-8{
-				flex: 8;
-			}
-			&.col-9{
-				flex: 9;
-			}
-			&.col-10{
-				flex: 10;
-			}
-			&.col-11{
-				flex: 11;
-			}
-			&.col-12{
-				flex: 12;
-			}
-		}
-	} 	
-}
-
-/* Ajuste 2 colunas no desktop */
-@media (min-width: 420px) {
-	.col-esq {
-		padding-left: 1%;
-	}
-	.col-dir {
-		padding-right: 1%;
 	}
 }
