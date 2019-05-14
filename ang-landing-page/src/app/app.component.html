@@ -1,16 +1,16 @@
-    <div class="poligono-fundo" style="z-index:1;">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+    <div style="z-index:1;">
+      <svg class="topo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
         <polygon fill="gray" points="0,0 0,75 150,100 100,0" />
       </svg>
     </div>
 
     <div class="row">
-      <div class="column " style="z-index:10;"> 
-        <h3>uma seleção de produtos</h3>
+      <div class="column header" style="z-index:10;"> 
+        <p>uma seleção de produtos</p>
         <h1>especial para você</h1>
-        <h2>Todos os produtos desta lista foram selecionados a partir da sua navegação. Aproveite!</h2> 
+        <p class="topo">Todos os produtos desta lista foram selecionados a partir da sua navegação. Aproveite!</p> 
       </div>
-      <div class="row" style="z-index:10;">
+      <div class="row" style="z-index:10;padding: 2% 10%;">
         <div class="column col-6">
           <div class="dupla-botoes">
             <button class="infos">Conheça a Linx</button>
@@ -77,6 +77,20 @@
 
     </div>
 
-    <div class="footer"></div>
+    <!-- RODAPÉ -->
+    <div class="row footer">
+      <div class="container-svg">
+        <svg class="rodape-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <polygon fill="white" points="0,0 0,10 100,0" /> 
+        </svg>
+      </div>
+      <div class="column"> 
+        <p class="rodape">Testando suas habilidades em HTML, CSS e JS.</p> 
+        <p class="rodape">Linx Impulse</p> 
+        <p class="rodape">2019</p> 
+      </div>
+    </div>
+
+
 
     <router-outlet></router-outlet>

@@ -22,12 +22,21 @@ body {
 }
 
 .header {
-	color:#0A669F;
+	color:#ffffff;
 	text-align: center;
 	font-size: inherit;
 }
-.header > .row {
-	color: #0A669F;
+.header > h3 {
+	font-family: "Helvetica Neue Medium";
+}
+.footer {
+	background-color: #707070;
+	height: 290px;
+	width: 100%;
+	position: relative;
+	text-align: center;
+	display: flex;
+	align-items: center;
 }
 
 p {
@@ -35,16 +44,23 @@ p {
 }
 
 /* fundo com ângulos */
-svg {
+svg.topo {
+	top:0;
 	position: absolute;
-	top: 0;
 	width: 100%;
-	height: 50vw;
+	height: 400px;
 	margin:0;
 }
-
-.poligono-fundo {
-	z-index: -100;
+.rodape {
+	color: #fff;
+}
+.container-svg {
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 290px;
+	overflow-y: hidden;
 }
 
 /* botões */
@@ -121,6 +137,7 @@ input {
 	flex-direction: row;
 	flex-wrap: wrap;
 	width: 100%;
+	padding: 2% 15%;
 
 	.column {
 		display: flex;
@@ -170,6 +187,7 @@ input {
 		flex-direction: row;
 		flex-wrap: wrap;
 		width: 100%;
+		padding: 3%;
 
 		.column {
 			display: flex;
