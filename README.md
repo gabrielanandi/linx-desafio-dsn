@@ -22,7 +22,6 @@ Dando prioridade a criação do template da página com os produtos selecionados
 
 
 <b>
-  Att,
-  Gabriela Nandi.
-  
-  Espero que possamos conversar pessoalmente!</b>
+  Espero que possamos conversar pessoalmente!
+Att, Gabriela Nandi.
+</b>
