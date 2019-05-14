@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
 	public title:string;
 	public data:any;
+	public limit:number;
 
 	construct(){
 	}
@@ -16,5 +17,9 @@ export class AppComponent implements OnInit {
 		this.data = require('../assets/test.json');
 		console.log("Json data", this.data);
 		this.title = 'Landing Page Blá';
+		this.limit = 4;
+	}
+	carregarProdutos() {
+		this.limit = this.limit + 4;
 	}
 }
